@@ -1,8 +1,8 @@
 const Film = ({ name, url }) => {
     
     return (<>
-        <p>{name}</p>
-        <p>{url}</p>
+        <a href={url}><li>{name}</li></a>
+
     </>)
 }
 export default Film
