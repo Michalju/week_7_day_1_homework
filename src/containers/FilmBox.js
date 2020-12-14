@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import FilmList from "../components/FilmList"
 
 const FilmBox = () => {
     const initialState = [
@@ -33,10 +33,10 @@ const FilmBox = () => {
     const [films, setFilms] = useState(initialState);
     return (
         <>
-            <h1>Upcoming Film Releases for UK {films[0].name}</h1>
+            <h1>Upcoming Film Releases for UK</h1>
 
-            <h2>{films[0].name}</h2>
-            <button>View more upcoming releases >></button>
+            <FilmList films = {films}/>
+            <button>View more upcoming releases</button>
       
         </>
     )
